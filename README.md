@@ -1,1 +1,4 @@
-# cookbook-qubell-mesos
+# qubell-mesos
+
+TODO: Enter the cookbook description here.
+
