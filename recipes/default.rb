@@ -9,4 +9,7 @@ case node['platform_family']
       command "apt-get update"
     end
   end
+
 package 'docker.io'
+node.default['mesos']['master']['flags']['hostname'] = node['fqdn']
+node.default['mesos']['slave']['flags']['hostname'] = node['fqdn']
