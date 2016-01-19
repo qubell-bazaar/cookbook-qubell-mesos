@@ -1,0 +1,5 @@
+<% @hosts.each do |host| %> 
+nameserver <%= host %>
+<% end %>
+search <%= @ec2_region %>.compute.amazonaws.com
+

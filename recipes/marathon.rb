@@ -22,7 +22,10 @@ file ::File.join(marathon_conf, "http_port") do
 end
 
 package "marathon"
-
+package "chronos"
 service "marathon" do
+  action [ :enable, :start ]
+end
+service "chronos" do
   action [ :enable, :start ]
 end
